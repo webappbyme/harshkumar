@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshkumar Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#bmi-calculator">BMI Calculator</a></li>
+            <li><a href="#appointment">Appointment</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Us Section -->
+    <header id="about">
+        <h1><i>Welcome to Harshkumar Clinic</i></h1>
+        <p>Providing high-quality, personalized healthcare for your community.</p><br>
+        <p>At Harshkumar Clinic, we are dedicated to providing high-quality, personalized healthcare to our community. <br>
+            Our experienced medical team offers a wide range of services, from routine check-ups to <br>
+            specialized treatments, with a commitment to caring for patients at every stage of life. <br>
+            We strive to create a welcoming and comfortable environment where your health and well-being <br>
+            are our top priority. With our state-of-the-art facilities and compassionate approach, <br>
+            Harshkumar Clinic is here to support your journey to better health.</p>
+        <img src="clinic.jpg" alt="Clinic image" class="header-img">
+    </header>
+
+    <!-- BMI Calculator Section -->
+    <section id="bmi-calculator">
+        <h2>BMI Calculator</h2>
+        <p>Calculate your BMI to gauge your health status.</p>
+        <form id="bmiForm">
+            <label for="height">Height:</label>
+            <input type="number" id="height" placeholder="Enter your height" required>
+            <select id="heightUnit">
+                <option value="cm">cm</option>
+                <option value="m">m</option>
+            </select>
+
+            <label for="weight">Weight:</label>
+            <input type="number" id="weight" placeholder="Enter your weight" required>
+            <select id="weightUnit">
+                <option value="kg">kg</option>
+                <option value="lb">lb</option>
+            </select>
+
+            <button type="button" onclick="calculateBMI()">Calculate</button>
+        </form>
+        <div id="bmiResult"></div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section id="appointment">
+        <h2>Appointment Request</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" required>
+            <button type="submit">Request Appointment</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Harshkumar Clinic. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
